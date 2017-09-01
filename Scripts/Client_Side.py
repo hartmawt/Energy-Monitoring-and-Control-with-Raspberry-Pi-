@@ -10,9 +10,9 @@ import mysql.connector
 from datetime import datetime
 
 #db connection inputs w/ ssl
-db = {'user': 'back1', 'password': 'backpack',
-      'host': 'smartroom.czjl1dned5qh.us-west-2.rds.amazonaws.com',
-      'database': 'SMARTRoom', 'ssl_ca': '/home/PL_Unit2/Documents/Scripts/rds-ca-2015-us-west-2.pem',
+db = {'user': 'USERNAME', 'password': 'PASSWORD',
+      'host': 'URL',
+      'database': 'NAME', 'ssl_ca': 'PATH',
       }
 
 #GPIO pin assignment
@@ -41,8 +41,8 @@ elif p_status == ('OFF'):
 #Socket
 
 while 1:
-    host = "34.208.206.63"
-    port = 5001
+    host = "<IP ADDRESS>"
+    port = #
     s = socket(AF_INET, SOCK_STREAM)
     total = 0
     
